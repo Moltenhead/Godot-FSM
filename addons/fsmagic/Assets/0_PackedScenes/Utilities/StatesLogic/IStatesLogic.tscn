@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bookc0sadhi"]
+
+[ext_resource type="Script" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/StatesLogic/IStatesLogic.gd" id="1_0fvdi"]
+[ext_resource type="PackedScene" uid="uid://bnl77v6vompgv" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/StatesLogic/StatesLogic.tscn" id="2_iis7o"]
+[ext_resource type="PackedScene" uid="uid://1n8tfa77mncn" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/StatesLogic/Ui/StatesLogicUi/StatesLogicUi.tscn" id="3_yedt5"]
+
+[node name="IStatesLogic" type="Node"]
+script = ExtResource("1_0fvdi")
+
+[node name="StatesLogicUi" parent="." instance=ExtResource("3_yedt5")]
+
+[node name="StatesLogic" parent="." instance=ExtResource("2_iis7o")]
+
+[editable path="StatesLogic"]
+[editable path="StatesLogic/Logic"]

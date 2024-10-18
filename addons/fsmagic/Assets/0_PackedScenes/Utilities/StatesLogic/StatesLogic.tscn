@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnl77v6vompgv"]
+
+[ext_resource type="PackedScene" uid="uid://d3emp2hvrf61x" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/Accessor/Accessor.tscn" id="1"]
+
+[node name="StatesLogic" type="Node"]
+
+[node name="Logic" parent="." instance=ExtResource("1")]
+script = null

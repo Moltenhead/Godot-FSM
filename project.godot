@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="FSM"
+run/main_scene="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/StatesLogic/IStatesLogic.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/fsmagic/plugin.cfg")

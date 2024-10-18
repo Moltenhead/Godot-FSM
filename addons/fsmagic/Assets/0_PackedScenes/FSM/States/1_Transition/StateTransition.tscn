@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource type="Script" path="res://Assets/0_PackedScenes/FSM/States/1_Transition/StateTransition.gd" id="1"]
+
+[node name="If" type="Node"]
+script = ExtResource( 1 )

@@ -1,0 +1,228 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbo3nxjpb0bpv"]
+
+[ext_resource type="Script" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/StatesLogic/Ui/StateUi/StateUi.gd" id="1_anafx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_34s2x"]
+font_size = 12
+font_color = Color(0.385493, 0.385492, 0.385492, 1)
+
+[sub_resource type="FontFile" id="FontFile_uni7u"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+
+[sub_resource type="Theme" id="Theme_htit8"]
+default_font = SubResource("FontFile_uni7u")
+
+[sub_resource type="Theme" id="Theme_dv62j"]
+default_font = SubResource("FontFile_uni7u")
+
+[sub_resource type="Theme" id="Theme_8dwqc"]
+default_font = SubResource("FontFile_uni7u")
+
+[sub_resource type="Theme" id="Theme_2ppbd"]
+default_font = SubResource("FontFile_uni7u")
+
+[node name="StateUi" type="PanelContainer"]
+offset_right = 160.0
+offset_bottom = 282.0
+script = ExtResource("1_anafx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "State Name ..."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "IEnter"
+label_settings = SubResource("LabelSettings_34s2x")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(12, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_htit8")
+theme_override_font_sizes/font_size = 12
+text = "Add Behaviour"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "IInput"
+label_settings = SubResource("LabelSettings_34s2x")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(12, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/VBoxContainer2/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_htit8")
+theme_override_font_sizes/font_size = 12
+text = "Add Behaviour"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "IProcess"
+label_settings = SubResource("LabelSettings_34s2x")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(12, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer3/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/VBoxContainer3/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_dv62j")
+theme_override_font_sizes/font_size = 12
+text = "Add Behaviour"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+text = "IPhysics"
+label_settings = SubResource("LabelSettings_34s2x")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer4/HBoxContainer"]
+custom_minimum_size = Vector2(12, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer4/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/VBoxContainer4/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_8dwqc")
+theme_override_font_sizes/font_size = 12
+text = "Add Behaviour"
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/VBoxContainer5"]
+layout_mode = 2
+text = "IExit"
+label_settings = SubResource("LabelSettings_34s2x")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer5"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer5/HBoxContainer"]
+custom_minimum_size = Vector2(12, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/VBoxContainer5/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/VBoxContainer5/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_2ppbd")
+theme_override_font_sizes/font_size = 12
+text = "Add Behaviour"

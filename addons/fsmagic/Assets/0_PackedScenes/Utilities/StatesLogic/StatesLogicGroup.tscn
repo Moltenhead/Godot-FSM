@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://df7vb80bosr6n"]
+
+[ext_resource type="Script" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/StatesLogic/StatesLogicGroup.gd" id="1"]
+
+[node name="Group" type="Node"]
+script = ExtResource("1")

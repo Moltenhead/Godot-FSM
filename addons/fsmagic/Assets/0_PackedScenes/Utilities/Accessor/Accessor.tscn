@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3emp2hvrf61x"]
+
+[ext_resource type="Script" path="res://addons/fsmagic/Assets/0_PackedScenes/Utilities/Accessor/Accessor.gd" id="1"]
+
+[node name="Accessor" type="Node"]
+script = ExtResource("1")

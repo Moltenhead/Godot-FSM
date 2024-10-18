@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d32d1gi3wil4x"]
+
+[ext_resource type="Script" path="res://Assets/0_PackedScenes/Interfaces/Behaviour/IBehaviour.gd" id="1"]
+
+[node name="I" type="Node"]
+script = ExtResource("1")

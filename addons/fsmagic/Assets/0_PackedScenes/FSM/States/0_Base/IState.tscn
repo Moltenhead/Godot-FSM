@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://s6yn1e81ny2i"]
+
+[ext_resource type="Script" path="res://addons/fsmagic/Assets/0_PackedScenes/FSM/States/0_Base/IState.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://4wvw6sxy1r7l" path="res://addons/fsmagic/Assets/0_PackedScenes/FSM/States/0_Base/State.tscn" id="2"]
+
+[node name="IState" type="Node"]
+script = ExtResource("1")
+
+[node name="Transitions" type="Node" parent="."]
+
+[node name="State" parent="." instance=ExtResource("2")]
+script = null
+
+[node name="IEnter" parent="State" index="0"]
+script = null
+
+[node name="IInput" parent="State" index="1"]
+script = null
+
+[node name="IProcess" parent="State" index="2"]
+script = null
+
+[node name="IPhysics" parent="State" index="3"]
+script = null
+
+[node name="IExit" parent="State" index="4"]
+script = null
+
+[editable path="State"]
